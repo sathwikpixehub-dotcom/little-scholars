@@ -1,0 +1,618 @@
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#e4e5e9,#638ef3,#f4c542);
+    padding: 20px;
+    color: #071b52;
+}
+
+
+
+.poster {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    background : linear-gradient(135deg,#9db2ee,#95a5ca,#f4c42);
+    border: 4px solid #071b52;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.header {
+    display: grid;
+    grid-template-columns: 20% 45% 15%;
+    gap: 2;
+    padding: 10px;
+    align-items: center;
+}
+
+
+.logo-section {
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    border-bottom: 4px solid #da8e02;
+}
+
+.logo {
+    height: 180px;
+    border: 5px solid #f4a000;
+    border-bottom: none;
+    border-radius: 50% 50% 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.graduation {
+    font-size: 75px;
+}
+
+.book {
+    font-size: 55px;
+}
+
+.logo-section h2 {
+    margin-bottom: 0.5;
+    line-height: 1;
+    font-size: 35px;
+    font-family: Georgia, serif;
+    letter-spacing: 3px;
+}
+
+.logo-section h3 {
+    margin-top: 0.5;
+    margin-bottom: 0.5;
+    line-height: 1;
+    color: #f4a000;
+    font-size: 29px;
+    letter-spacing: 3px;
+}
+
+.logo-tagline {
+margin-bottom: 0;
+line-height: 1;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+
+/* MAIN TITLE */
+
+.main-title {
+    text-align: center;
+    padding: 10px;
+}
+
+.main-title h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 6vw, 100px);
+    font-weight: 900;
+    color: #071b52;
+    line-height: 1.05;
+    text-shadow: 3px 4px 2px #cccccc;
+}
+
+.main-title .red-title {
+    color: #c90012;
+}
+
+.tuition-title {
+    background-color: #071b52;
+    color: white;
+    border: 4px solid #f4bd00;
+    border-radius: 20px;
+    padding: 12px 3px;
+    margin-top: 15px;
+    font-size: clamp(18px, 2.5vw, 40px);
+    font-weight: bold;
+}
+
+.slogan {
+    background-color: #ffcc00;
+    color: #071b52;
+    padding: 12px 5px;
+    margin-top: 18px;
+    font-size: clamp(12px, 1.8vw, 25px);
+    font-weight: 900;
+    text-align: center;
+}
+
+.class-section {
+    text-align: right;
+    padding: 10px;
+}
+
+.learn {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: bold;
+    transform: rotate(-5deg);
+}
+
+.lead {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-style: italic;
+    font-weight: bold;
+    color: #c90012;
+    transform: rotate(-5deg);
+    margin-bottom: 20px;
+}
+
+.class-circle {
+    width: 100%;
+    max-width: 260px;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+    border: 5px dashed rgb(8, 8, 8);
+    outline: 5px solid #fdfcfc;
+    background-color: #2909df;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.class-circle h3 {
+    font-size: 25px;
+}
+
+.class-circle h2 {
+    font-size: clamp(25px, 3vw, 42px);
+    color: #e9eee8;
+    margin: 1px 0;
+}
+
+.class-circle sup {
+    font-size: 20px;
+}
+
+.class-book {
+    font-size: 50px;
+}
+
+.features-section {
+    margin: 15px 4%;
+    border: 3px solid #071b52;
+    border-radius: 25px;
+    padding: 15px;
+    position: relative;
+}
+
+.section-heading {
+    background-color: #071b52;
+    color: white;
+    text-align: right;
+    width: fit-content;
+    max-width: 100%;
+    margin: -35px auto 25px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: clamp(16px, 2.5vw, 30px);
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.feature {
+    border: 2px solid currentColor;
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px 5px;
+    min-width: 0;
+}
+
+.feature-icon {
+    width: 100px;
+    height: 100px;
+    border: 5px solid currentColor;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -40px auto 15px;
+    background-color: white;
+    font-size: 45px;
+}
+
+.feature h3 {
+    font-size: clamp(14px, 1.7vw, 24px);
+    margin-bottom: 8px;
+}
+
+.feature p {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.purple {
+    color: #651a80;
+}
+
+.green {
+    color: #08751b;
+}
+
+.blue {
+    color: #07388d;
+}
+
+.pink {
+    color: #d50058;
+}
+
+
+/* STUDENT SECTION */
+
+.student-section {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: right;
+    padding: 10px 4%;
+    gap: 15px;
+}
+
+.student-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* TIMINGS */
+
+.timing-box {
+    border: 3px solid #071b52;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.clock {
+    font-size: 55px;
+}
+
+.timing-box h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.timing-box h2 {
+    color: #c90012;
+    font-size: clamp(18px, 2.5vw, 35px);
+}
+
+
+/* SUCCESS MESSAGE */
+
+.success-message {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: clamp(16px, 2vw, 27px);
+    font-weight: bold;
+}
+
+.success-icon {
+    font-size: 65px;
+}
+
+.success-message span {
+    color: #c90012;
+}
+
+
+/* STUDENT IMAGE PLACEHOLDER */
+
+.student-image {
+    text-align: center;
+    background: linear-gradient(
+        to bottom,
+        #e5f4ff,
+        #ffffff
+    );
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.student-emoji {
+    font-size: clamp(100px, 15vw, 220px);
+}
+
+.student-image p {
+    font-size: 45px;
+}
+
+
+.footer {
+    background-color: #071b52;
+    color: white;
+    border-top: 8px solid #ffcc00;
+    border-radius: 10% 10% 0 0 / 10% 10% 0 0;
+    padding: 25px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* ADDRESS */
+
+.address {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-right: 15px;
+    border-right: 3px dotted white;
+}
+
+.location-icon {
+    font-size: 55px;
+}
+
+.address-text h3 {
+    font-size: clamp(14px, 1.7vw, 24px);
+    margin: 5px 0;
+}
+
+.yellow-text {
+    color: #ffcc00;
+}
+
+
+/* PHONE NUMBERS */
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.phone-icon {
+    background-color: #ffcc00;
+    color: #071b52;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    flex-shrink: 0;
+}
+
+.phone-numbers p {
+    font-size: clamp(18px, 2.5vw, 36px);
+    font-weight: 900;
+    margin: 8px 0;
+}
+
+
+/* TABLET RESPONSIVENESS */
+
+@media screen and (max-width: 900px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .header {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .logo-section {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .main-title {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .class-section {
+        grid-column: 1 / -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .class-circle {
+        max-width: 180px;
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 35px;
+    }
+
+    .student-section {
+        grid-template-columns: 1fr 0.7fr;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    .address {
+        border-right: none;
+        border-bottom: 2px dotted white;
+        padding-bottom: 15px;
+    }
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 550px) {
+
+    body {
+        padding: 5px;
+    }
+
+    .poster {
+        border-width: 2px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo-section {
+        width: 100%;
+        max-width: 280px;
+        margin: auto;
+    }
+
+    .logo {
+        height: 140px;
+    }
+
+    .main-title {
+        width: 100%;
+    }
+
+    .main-title h1 {
+        font-size: clamp(40px, 12vw, 65px);
+    }
+
+    .tuition-title {
+        font-size: 20px;
+        padding: 10px 3px;
+    }
+
+    .slogan {
+        font-size: 13px;
+    }
+
+    .class-section {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .class-circle {
+        width: 190px;
+    }
+
+    .features-section {
+        margin: 30px 10px 15px;
+        padding: 15px 8px;
+    }
+
+    .section-heading {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .feature {
+        padding: 20px 10px;
+    }
+
+    .feature h3 {
+        font-size: 20px;
+    }
+
+    .feature p {
+        font-size: 14px;
+    }
+
+    .student-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .student-info {
+        width: 100%;
+    }
+
+    .timing-box {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .clock {
+        font-size: 40px;
+    }
+
+    .timing-box h3 {
+        font-size: 17px;
+    }
+
+    .timing-box h2 {
+        font-size: 18px;
+    }
+
+    .success-message {
+        font-size: 17px;
+    }
+
+    .student-image {
+        width: 100%;
+    }
+
+    .student-emoji {
+        font-size: 150px;
+    }
+
+    .footer {
+        padding: 20px 10px;
+        gap: 15px;
+    }
+
+    .address {
+        gap: 8px;
+    }
+
+    .location-icon {
+        font-size: 35px;
+    }
+
+    .address-text h3 {
+        font-size: 13px;
+    }
+
+    .contact {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .phone-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 25px;
+    }
+
+    .phone-numbers p {
+        font-size: clamp(17px, 5vw, 24px);
+    }
